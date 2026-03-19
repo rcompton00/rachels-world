@@ -1,0 +1,19 @@
+.App {
+  background-color: black;
+  display:flex;
+}
+
+.name{
+  font-size: 100px;
+  color: white;
+  font-family: Arial;
+}
+
+.about-button {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
