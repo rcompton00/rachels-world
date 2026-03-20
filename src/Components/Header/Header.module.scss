@@ -1,0 +1,18 @@
+.container_header {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #f5f5f5;
+}   
+
+.button_name {
+    align-self: flex-start;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.button_menu {
+    align-self: flex-end;
+    font-size: 16px;
+    font-weight: 500;
+}
