@@ -1,31 +1,30 @@
 import styles from './ContentCard.module.scss'
 
+type Variant = 'core' | 'working' | 'familiar'
+
 type ContentCardProps = {
-    title: 'Growing' | 'Learning' | 'Comfortable'
+    icon: string
+    title: string
+    description: string
     content: string[]
+    variant: Variant
 }
 
-const barFill = {
-    Growing: '25%',
-    Learning: '50%',
-    Comfortable: '75%',
-}
-
-export const ContentCard = ({ title, content }: ContentCardProps) => {
+export const ContentCard = ({ icon, title, description, content, variant }: ContentCardProps) => {
     return (
-        <div className={styles.card}>
-            <h2 className={styles.title}>{title}</h2>
-            <div className={styles.bar_track}>
-                <div
-                    className={styles.bar_fill}
-                    style={{ width: barFill[title] }}
-                />
+        <div className={`${styles.card} ${styles[variant]}`}>
+            <div className={styles.header}>
+                <span className={styles.icon}>{icon}</span>
+                <div>
+                    <h2 className={styles.title}>{title}</h2>
+                    <p className={styles.description}>{description}</p>
+                </div>
             </div>
-            <ul className={styles.content_list}>
+            <div className={styles.pills}>
                 {content.map((item) => (
-                    <li key={item}>{item}</li>
+                    <span key={item} className={styles.pill}>{item}</span>
                 ))}
-            </ul>
+            </div>
         </div>
     )
 }
