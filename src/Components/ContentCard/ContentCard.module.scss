@@ -44,7 +44,7 @@
 .description {
     font-size: 0.9rem;
     color: black;
-    font-family: 'Franklin Gothic Light';
+    font-family: 'Franklin Gothic Medium';
     margin: 0;
 }
 
@@ -52,6 +52,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-left: 50px;
 }
 
 .core {
