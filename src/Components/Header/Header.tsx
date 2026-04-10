@@ -1,6 +1,8 @@
 import { navigateHome, navigateAbout, navigateExperience, navigateProjects, navigateAccomplishments, navigateContact } from "../../utls/navigation"
 import styles from './Header.module.scss'
 
+//TODO: Could this be more DRY? Maybe map through an array of section names and create buttons that way instead of hardcoding each one?
+
 export const Header = () => {
     return (
         <div className={styles.container_header}>

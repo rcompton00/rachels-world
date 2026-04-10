@@ -1,8 +1,26 @@
 .container_home {
-    // display: flex;
-    // flex-direction: column;
-    background-color: grey;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
     width: 100%;
     min-height: 100vh;
-    width: 100%;
+    padding: 20px 20px 20px 20px;
+}
+
+.home_image {
+    width: 20%;
+    max-width: 25%;
+    height: 25%;
+    margin-top: 20px;
+}
+
+.home_title {
+    font-family:'Franklin Gothic Medium';
+    font-size:64px;
+    font-weight: 500;
+    color: black;
+    span {
+        color: purple;
+    }
+    padding-top: 80px;
 }
