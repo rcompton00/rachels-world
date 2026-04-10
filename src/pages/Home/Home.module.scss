@@ -1,8 +1,89 @@
 .container_home {
-    // display: flex;
-    // flex-direction: column;
-    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: white;
     width: 100%;
-    min-height: 100vh;
-    width: 100%;
+    gap: 40px;
+}
+
+.left_column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    margin-top: 50px;
+}
+
+.right_column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    max-width: 50%;
+}
+
+.home_image {
+    width: 280px;
+    max-width: 100%;
+    border-color: #f70776;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.home_title {
+    font-family:'Franklin Gothic Medium';
+    font-size:64px;
+    font-weight: 500;
+    color: black;
+    span {
+        color: purple;
+    }
+    margin-top: 200px;
+}
+
+.home_description {
+    font-family: 'Franklin Gothic Medium';
+    font-weight: 500;
+    color: #black;
+    margin-top: 20px;
+}
+
+.footer_container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 16px;
+    color: #f70776;
+    background-color: white;
+    padding: 20px 0;
+}
+
+.footer_buttons {
+    font-family:'Franklin Gothic Medium';
+    font-size: 20px;
+    font-weight: 500;
+    color: #f70776;
+    background-color: white;
+    border: #f70776 1px solid;
+    width: 150px;
+    height: 40px;
+}
+
+.footer_icons {
+    width: 30px;
+    height: 30px;
+    margin: 15px;
+    color: #f70776;
+}
+
+.bullet_icon {
+    vertical-align: middle;
+    color: #f70776;
+    font-size: 1.1rem !important;
+}
+
+.link_wrapper {
+    border: none;
+    background: none;
+    color: #f70776;
 }
