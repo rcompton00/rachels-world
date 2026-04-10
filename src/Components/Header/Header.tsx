@@ -8,7 +8,7 @@ export const Header = () => {
                 className={styles.button_name}
                 onClick={navigateHome()}>
                     <span>R</span>achel
-                    <span>C</span>ompton
+                    <span> C</span>ompton
             </button>
 
             <button 
