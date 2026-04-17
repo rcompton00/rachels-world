@@ -1,7 +1,8 @@
 .container_home {
     display: flex;
-    flex-direction: row;
-    align-items: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
     background-color: white;
     width: 100%;
     gap: 40px;
@@ -23,20 +24,22 @@
 }
 
 .home_image {
-    width: 280px;
+    width: 70%;
     max-width: 100%;
-    border-color: #f70776;
-    border-width: 2px;
-    border-style: solid;
+    height: auto;
+    border: 2px solid #f70776;
 }
 
 .home_title {
+    display: flex;
+    justify-content: center;
     font-family:'Franklin Gothic Medium';
     font-size:64px;
     font-weight: 500;
     color: black;
     span {
         color: purple;
+        padding-left: 20px;
     }
     margin-top: 200px;
 }
@@ -44,7 +47,7 @@
 .home_description {
     font-family: 'Franklin Gothic Medium';
     font-weight: 500;
-    color: #black;
+    color: black;
     margin-top: 20px;
 }
 
@@ -86,4 +89,34 @@
     border: none;
     background: none;
     color: #f70776;
+}
+
+@media (max-width: 900px) {
+  .container_home {
+    justify-content: center;
+  }
+
+  .home_title,
+  .home_description {
+    text-align: center;
+  }
+
+  .right_column {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container_home {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .left_column {
+    margin-top: 24px;
+  }
+
+  .home_title {
+    margin-top: 40px;
+  }
 }

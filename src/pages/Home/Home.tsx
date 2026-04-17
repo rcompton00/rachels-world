@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/Email';
 import ChevronRightIcon from '@mui/icons-material/ChevronRight';
 import Link from '@mui/material/Link';
+import Grid from '@mui/material/Grid';
 
 
 export default function Home () {
@@ -18,13 +19,15 @@ export default function Home () {
   return (
     <div>
         <Header />
-        <p className={styles.home_title}>Hi, I'm <span>Rachel Compton</span></p>
+        <p className={styles.home_title}>Hi, I'm <span> Rachel Compton</span></p>
         <div className={styles.container_home}>
+          <Grid container spacing={2}>
+            </Grid>
           <div className={styles.left_column}>
             <img className={styles.home_image} src={Headshot2026} alt="Rachel Compton" />
             <h1 className={styles.home_description}>Full Stack Software Engineer</h1>
             <h3 className={styles.home_description}><ChevronRightIcon className={styles.bullet_icon}/>3 years specializing in Marketing Ad Technology</h3>
-            <h3 className={styles.home_description}><ChevronRightIcon className={styles.bullet_icon}/>Built campaign manager, metrics dashboard & supplier self-serve portal</h3>
+            {/* <h3 className={styles.home_description}><ChevronRightIcon className={styles.bullet_icon}/>Built campaign manager, metrics dashboard & supplier self-serve portal</h3> */}
             <div className={styles.footer_container}>
               <Link className={styles.link_wrapper} underline="none" href="https://github.com/rcompton00" target="_blank" rel="noopener">
                 <GitHubIcon className={styles.footer_icons}/>
